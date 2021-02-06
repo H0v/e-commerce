@@ -9,12 +9,10 @@ export default function Main() {
       <img className="mainImage" alt="mainImage" src={Furniture}></img>
       <div className="mainInfo">
         <p className="mainTitle fctm">Create your comfort zone.</p>
-        {/* <div className="shopButtonWrapper"> */}
         <button className="fctm shopButton" onClick={() => alert("hi")}>
           Shop now
         </button>
         <img className="arrow" alt="arrow" src={Arrow}></img>
-        {/* </div> */}
       </div>
     </div>
   );

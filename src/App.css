@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "fctm";
+  src: local("factum"), url(./factum.otf) format("otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fctm {
+  font-family: "fctm";
+}

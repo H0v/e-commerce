@@ -17,8 +17,10 @@
   /* border: 10px red solid; */
   position: absolute;
   z-index: 3;
+  /* z-index: 9999; */
+
   margin: auto;
-  width: 50%;
+  /* width: 50%; */
   height: auto;
   max-height: 500px;
   top: 0;
@@ -31,36 +33,26 @@
   align-items: center;
 }
 .mainTitle {
-  z-index: 0;
+  /* z-index: 0; */
   font-size: 64px;
   color: #780202;
-  /* width: 50%; */
-  /* height: 50%; */
-  /* margin: auto; */
   text-align: center;
   line-height: 74px;
-  /* position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0; */
 }
 .shopButton {
+  z-index: 3;
   font-size: 18px;
   line-height: 21px;
   padding: 20px 40px;
   border: none;
   background: white;
-  /* margin: auto; */
+  margin-top: 30px;
+  margin-bottom: 30px;
   height: 60px;
   width: 200px;
-  /* position: absolute;
-  top: ;
-  left: 0;
-  bottom: 0;
-  right: 0; */
+  transition-duration: 0.5s;
 }
-.shopButton :hover {
+.shopButton:hover {
   transition-duration: 0.5s;
   border-radius: 30px;
 }
@@ -68,10 +60,22 @@
 .arrow {
   /* margin: auto; */
   /* position: absolute; */
-  margin-top: 60px;
+  /* margin-top: 30px; */
   width: auto;
   top: 180px;
+  animation: slide 1s ease-in-out infinite;
   /* left: 0;
   bottom: 0;
   right: 0; */
+}
+
+@keyframes slide {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
 }

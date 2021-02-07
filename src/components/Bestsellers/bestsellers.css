@@ -130,9 +130,5 @@
 }
 
 .seeMore:hover {
-  /* animation: slide2 1s ease-in-out infinite; */
-}
-
-.seeMore:hover {
   animation: slide2 1s ease-in-out infinite;
 }

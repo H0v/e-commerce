@@ -12,54 +12,127 @@
   color: #780202;
   margin-bottom: 30px;
 }
+
 .bestsellersList {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  /* width: 100%;
+  max-width: 1180px; */
+
   width: 100%;
-  max-width: 1180px;
+  max-width: 1440px;
+  position: relative;
 }
+
 .bestsellersItem {
   height: 480px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
+  position: relative;
 }
 
 .priceBlock {
-  width: 290px;
+  width: 250px;
   margin-right: 20px;
   margin-left: 20px;
   height: 100px;
   background: #eee;
-  transition-duration: 1s;
-
-  position: relative;
+  transition-duration: 0.3s;
+  position: absolute;
   z-index: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
 }
-
-/* .priceBlock:hover {
-  transition-duration: 1s;
-  height: 100%;
-} */
-
-.bestsellersItem img {
-  opacity: 0.1;
-  width: 100%;
-  /* max-width: 290px; */
+.priceInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 15px; */
   position: relative;
-  top: 20px;
-  z-index: 3;
-  transition-duration: 1s;
+  top: 10px;
 }
-.bestsellersItem img:hover {
-  transition-duration: 1s;
-  width: 110%;
+.itemImage {
+  opacity: 1;
+  position: relative;
+  bottom: 80px;
+  z-index: 3;
+  width: 290px;
+  max-width: 350px;
+  transition-duration: 0.8s;
+}
+.itemImage:hover {
+  transition-duration: 0.8s;
+  width: 100%;
   z-index: 5;
 }
-.bestsellersItem img:hover ~ .priceBlock {
-  transition-duration: 1s;
+.itemImage:hover ~ .priceBlock {
+  transition-duration: 0.3s;
   height: 100%;
-  z-index: 3;
+  z-index: -1;
+}
+
+.itemTitle {
+  text-align: center;
+  font-size: 20px;
+}
+.itemPrice {
+  color: #780202;
+  font-size: 20px;
+}
+.addButton {
+  cursor: pointer;
+  width: 120px;
+  height: 40px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: none;
+  background: #780202;
+  color: white;
+  position: relative;
+  top: 10px;
+  transition-duration: 0.5s;
+}
+
+.addButton:hover {
+  border-radius: 10px;
+  transition-duration: 0.5s;
+}
+
+.addButton img {
+  width: 16px;
+  filter: invert(100%) sepia(97%) saturate(12%) hue-rotate(239deg)
+    brightness(105%) contrast(104%);
+}
+
+.seeMore {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 1440px;
+  cursor: pointer;
+}
+.seeMore p {
+  margin-bottom: 15px;
+}
+
+.seeMore:hover {
+  /* animation: slide2 1s ease-in-out infinite; */
+}
+
+.seeMore:hover {
+  animation: slide2 1s ease-in-out infinite;
 }

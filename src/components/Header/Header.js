@@ -1,14 +1,16 @@
 import React from "react";
 import "./header.css";
-import Logo from "./Logo.svg";
-import CartIcon from "./CartIcon.svg";
-import SearchIcon from "./SearchIcon.svg";
+import Logo from "../../static/svg/Logo.svg";
+import CartIcon from "../../static/svg/CartIcon.svg";
+import SearchIcon from "../../static/svg/SearchIcon.svg";
 
 export default function Header() {
   return (
     <header>
       <div className="headerBox">
-        <img alt="Logo" src={Logo}></img>
+        <a href="/">
+          <img className="logo" alt="Logo" src={Logo}></img>
+        </a>
         <div className="navBar">
           <button className="navItem fctm">Furniture</button>
           <button className="navItem fctm">Lightning</button>

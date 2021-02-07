@@ -1,6 +1,6 @@
 import React from "react";
-import Furniture from "./furniture.jpg";
-import Arrow from "./arrow.svg";
+import Furniture from "../../static/images/furniture.jpg";
+import Arrow from "../../static/svg/arrow.svg";
 import "./main.css";
 
 export default function Main() {

@@ -1,0 +1,103 @@
+.catalogue {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 1344px;
+}
+.description {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.descriptionTitle {
+  font-size: 36px;
+  line-height: 42px;
+  color: #780202;
+}
+.descriptionText {
+  margin-top: 30px;
+  text-align: center;
+  max-width: 50%;
+  font-family: "Roboto";
+}
+.categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1160px;
+}
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.catItem {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.catItem p {
+  cursor: pointer;
+  margin-top: 30px;
+  font-size: 36px;
+  text-align: center;
+}
+
+.bigImage img {
+  width: 100%;
+  height: 100%;
+  max-width: 575px;
+  height: 611px;
+}
+
+.catControls {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.catArrow {
+  margin-top: 10px;
+}
+
+.smallImage img {
+  width: 100%;
+  height: 100%;
+  max-width: 575px;
+  height: 305px;
+}
+
+.smallImage img,
+.bigImage img {
+  opacity: 0.8;
+}
+.smallImage img,
+.bigImage img:hover {
+  opacity: 1;
+}
+.catArrow {
+  cursor: pointer;
+}
+.catArrow:hover {
+  animation: slide2 1s ease-in-out infinite;
+}
+@keyframes slide2 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+
+  50% {
+    transform: translate(20px, 0);
+    opacity: 0.5;
+  }
+}

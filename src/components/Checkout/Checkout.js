@@ -15,24 +15,29 @@ export default function Checkout() {
         <div className="cardInfo fctm">
           <label className="cardLabel">
             <p>Card Number</p>
-            <input placeholder="0123-4567-8901-2345"></input>
+            <input required placeholder="0123-4567-8901-2345"></input>
           </label>
           <label className="cardLabel">
             <p>Name</p>
-            <input placeholder="Tom Thompson"></input>
+            <input required placeholder="Tom Thompson"></input>
           </label>
           <div className="dateCvcBlock">
             <label className="cardLabel">
               <p>Exp. Date</p>
-              <input placeholder="12/21"></input>
+              <input required placeholder="12/21"></input>
             </label>
             <label className="cardLabel">
               <p>CVC</p>
-              <input placeholder="123"></input>
+              <input required placeholder="123"></input>
             </label>
           </div>
         </div>
         <img className="longLines" alt="longLines" src={LongCardLines}></img>
+      </div>
+      <div className="itemInfoBlock">
+        <p className="itemTitle fctm">Sofa Francesca</p>
+        <p className="itemPrice fctm">300$</p>
+        <button className="acceptButton fctm">Accept</button>
       </div>
     </div>
   );

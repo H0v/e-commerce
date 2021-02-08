@@ -9,7 +9,7 @@ export default function Cart() {
       <div className="singleCartItem">
         <img alt="img" src={item1}></img>
         <div className="buyBlock">
-          <div className="priceInfo">
+          <div className="buyInfo">
             <p className="itemTitle fctm">Sofa Francesca</p>
             <p className="itemPrice fctm">300$</p>
           </div>
@@ -19,7 +19,7 @@ export default function Cart() {
       <div className="singleCartItem">
         <img alt="img" src={item2}></img>
         <div className="buyBlock">
-          <div className="priceInfo">
+          <div className="buyInfo">
             <p className="itemTitle fctm">Sofa Francesca</p>
             <p className="itemPrice fctm">300$</p>
           </div>

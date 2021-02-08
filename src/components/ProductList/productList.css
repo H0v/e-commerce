@@ -8,10 +8,11 @@
   width: 100%;
   max-width: 1440px;
   position: relative;
+  margin-top: 30px;
 }
 
 .productsItem {
-  height: 480px;
+  height: 450px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

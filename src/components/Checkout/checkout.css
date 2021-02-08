@@ -1,10 +1,12 @@
 .checkout {
   margin-top: 30px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 .card {
+  z-index: 1;
   padding: 15px;
   margin-top: 30px;
   height: 350px;
@@ -65,4 +67,36 @@
 
 .longLines {
   margin-top: 30px;
+}
+.itemInfoBlock {
+  position: relative;
+  right: 20px;
+  top: 10px;
+  height: 320px;
+  width: 320px;
+  background: #eee;
+  border-radius: 20px;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.itemInfoBlock .itemPrice {
+  margin-top: 15px;
+}
+
+.acceptButton {
+  cursor: pointer;
+  margin-top: 20px;
+  height: 60px;
+  width: 200px;
+  background: #780202;
+  border: none;
+  color: white;
+  transition-duration: 0.5s;
+}
+.acceptButton:hover {
+  transition-duration: 0.5s;
+  border-radius: 20px;
 }

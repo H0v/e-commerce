@@ -1,0 +1,68 @@
+.checkout {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  padding: 15px;
+  margin-top: 30px;
+  height: 350px;
+  width: 600px;
+  background: #780202;
+  border-radius: 30px;
+}
+.cardInfo {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.dateCvcBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.cardLabel {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+  margin-bottom: 30px;
+}
+.cardLabel p {
+  width: 100%;
+}
+
+.cardLabel input {
+  height: 20px;
+  color: white;
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.cardDesign {
+  margin-bottom: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mastercard {
+  align-self: flex-start;
+}
+.lines {
+  align-self: flex-end;
+  margin-right: -15px;
+}
+
+.longLines {
+  margin-top: 30px;
+}

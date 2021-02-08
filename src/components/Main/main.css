@@ -1,5 +1,7 @@
 .main {
   position: relative;
+  bottom: 100px;
+  z-index: 1;
 }
 .mainImage {
   z-index: -1;

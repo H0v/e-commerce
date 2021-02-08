@@ -5,6 +5,9 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Furniture from "./components/Furniture/Furniture";
+import Cart from "./components/Cart/Cart";
+import Checkout from "./components/Checkout/Checkout";
 
 function App() {
   return (
@@ -20,9 +23,18 @@ function App() {
           </Route>
           <Route path="/furniture">
             <Header />
+            <Furniture />
           </Route>
           <Route path="/lightning">
             <Header />
+          </Route>
+          <Route path="/cart">
+            <Header />
+            <Cart />
+          </Route>
+          <Route path="/checkout/:id">
+            <Header />
+            <Checkout />
           </Route>
           <Route path="/*">
             <h1>404</h1>

@@ -78,6 +78,7 @@
 .smallImage img,
 .bigImage img {
   opacity: 0.8;
+  object-fit: cover;
 }
 .smallImage img,
 .bigImage img:hover {

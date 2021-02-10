@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import "./cart.css";
 import CartIcon from "../../static/svg/CartIcon.svg";
+import { Link } from "react-router-dom";
 
 function Cart({ cartItems }) {
   return (
@@ -16,7 +17,9 @@ function Cart({ cartItems }) {
                   <p className="itemTitle fctm">{el.name}</p>
                   <p className="itemPrice fctm">{el.price}</p>
                 </div>
-                <button className="buyButton fctm">Buy Now</button>
+                <Link to={"/checkout/" + el.id}>
+                  <button className="buyButton fctm">Buy Now</button>
+                </Link>
               </div>
             </div>
           );

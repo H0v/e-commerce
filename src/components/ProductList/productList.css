@@ -60,9 +60,15 @@
   z-index: 5;
 }
 .itemImage:hover ~ .priceBlock {
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   height: 100%;
   z-index: -1;
+}
+
+.priceBlock:hover {
+  z-index: -1;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .itemTitle {

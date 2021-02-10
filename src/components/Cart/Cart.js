@@ -1,31 +1,38 @@
 import React, { useState } from "react";
-import item1 from "../../static/images/bestsellers1.jfif";
-import item2 from "../../static/images/bestsellers2.jfif";
-import Bestsellers1 from "../../static/images/bestsellers1.jfif";
-import Bestsellers2 from "../../static/images/bestsellers2.jfif";
+import { connect } from "react-redux";
 import "./cart.css";
+import CartIcon from "../../static/svg/CartIcon.svg";
 
-export default function Cart() {
-  const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Sofa Francesca", price: "300$", image: Bestsellers1 },
-    { id: 2, name: "Sofa Francesca", price: "300$", image: Bestsellers2 },
-  ]);
+function Cart({ cartItems }) {
   return (
     <div className="cart">
-      {cartItems.map((el) => {
-        return (
-          <div key={"product"+el.id}className="singleCartItem">
-            <img alt="img" src={el.image}></img>
-            <div className="buyBlock">
-              <div className="buyInfo">
-                <p className="itemTitle fctm">{el.name}</p>
-                <p className="itemPrice fctm">{el.price}</p>
+      {cartItems.length !== 0 ? (
+        cartItems.map((el) => {
+          return (
+            <div key={"product" + el.id} className="singleCartItem">
+              <img alt="img" src={el.image}></img>
+              <div className="buyBlock">
+                <div className="buyInfo">
+                  <p className="itemTitle fctm">{el.name}</p>
+                  <p className="itemPrice fctm">{el.price}</p>
+                </div>
+                <button className="buyButton fctm">Buy Now</button>
               </div>
-              <button className="buyButton fctm">Buy Now</button>
             </div>
-          </div>
-        );
-      })}
+          );
+        })
+      ) : (
+        <div className="emptyCart">
+          <img src={CartIcon}></img>
+          <p className="fctm">Your Cart is Empty :(</p>
+        </div>
+      )}
     </div>
   );
 }
+
+const mapStateToProps = (state) => ({
+  cartItems: state.cart,
+});
+
+export default connect(mapStateToProps, null)(Cart);

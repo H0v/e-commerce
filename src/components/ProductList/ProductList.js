@@ -1,8 +1,10 @@
 import React from "react";
 import CartIcon from "../../static/svg/CartIcon.svg";
+import { connect } from "react-redux";
 import "./productList.css";
+import { addToCart } from "../../redux/actions";
 
-export default function ProductList({ data }) {
+function ProductList({ data, addToCart }) {
   return (
     <div className="productsList">
       {data.slice(0, 4).map((el) => {
@@ -13,7 +15,13 @@ export default function ProductList({ data }) {
               <div className="priceInfo">
                 <p className="itemTitle fctm">{el.name}</p>
                 <p className="itemPrice fctm">{el.price}</p>
-                <button id={"product" + el.id} className="addButton fctm">
+                <button
+                  onClick={() => {
+                    addToCart(el);
+                  }}
+                  id={"product" + el.id}
+                  className="addButton fctm"
+                >
                   <img id="cartIcon" alt="cartIcon" src={CartIcon}></img>
                   Add
                 </button>
@@ -25,3 +33,9 @@ export default function ProductList({ data }) {
     </div>
   );
 }
+
+const mapDispatchToProps = {
+  addToCart,
+};
+
+export default connect(null, mapDispatchToProps)(ProductList);

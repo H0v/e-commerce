@@ -7,6 +7,7 @@
   align-items: center;
   width: 100%;
   max-width: 1440px;
+  flex-wrap: wrap;
 }
 
 .singleCartItem {
@@ -58,4 +59,20 @@
 .buyButton:hover {
   transition-duration: 0.5s;
   border-radius: 20px;
+}
+
+.emptyCart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.emptyCart img {
+  width: 200px;
+}
+.emptyCart p {
+  font-size: 30px;
+  color: #780202;
+  margin-top: 30px;
 }

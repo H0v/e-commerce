@@ -67,8 +67,6 @@
 
 .priceBlock:hover {
   z-index: -1;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 20px;
 }
 
 .itemTitle {

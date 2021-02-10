@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/e-commerce/static/css/main.7be9a028.chunk.css",
+    "main.js": "/e-commerce/static/js/main.e658d0af.chunk.js",
+    "main.js.map": "/e-commerce/static/js/main.e658d0af.chunk.js.map",
+    "runtime-main.js": "/e-commerce/static/js/runtime-main.9ddde906.js",
+    "runtime-main.js.map": "/e-commerce/static/js/runtime-main.9ddde906.js.map",
+    "static/js/2.a6a58625.chunk.js": "/e-commerce/static/js/2.a6a58625.chunk.js",
+    "static/js/2.a6a58625.chunk.js.map": "/e-commerce/static/js/2.a6a58625.chunk.js.map",
+    "static/js/3.8e2b3366.chunk.js": "/e-commerce/static/js/3.8e2b3366.chunk.js",
+    "static/js/3.8e2b3366.chunk.js.map": "/e-commerce/static/js/3.8e2b3366.chunk.js.map",
+    "index.html": "/e-commerce/index.html",
+    "static/css/main.7be9a028.chunk.css.map": "/e-commerce/static/css/main.7be9a028.chunk.css.map",
+    "static/js/2.a6a58625.chunk.js.LICENSE.txt": "/e-commerce/static/js/2.a6a58625.chunk.js.LICENSE.txt",
+    "static/media/CartIcon.bdf85964.svg": "/e-commerce/static/media/CartIcon.bdf85964.svg",
+    "static/media/Logo.3416f2b3.svg": "/e-commerce/static/media/Logo.3416f2b3.svg",
+    "static/media/SearchIcon.3a001813.svg": "/e-commerce/static/media/SearchIcon.3a001813.svg",
+    "static/media/arrow.952d5cc6.svg": "/e-commerce/static/media/arrow.952d5cc6.svg",
+    "static/media/bathroom.9d9b8ec3.jfif": "/e-commerce/static/media/bathroom.9d9b8ec3.jfif",
+    "static/media/bedRoom.3a6a18aa.jfif": "/e-commerce/static/media/bedRoom.3a6a18aa.jfif",
+    "static/media/bestsellers1.c7b39412.jfif": "/e-commerce/static/media/bestsellers1.c7b39412.jfif",
+    "static/media/bestsellers2.b8232c2b.jfif": "/e-commerce/static/media/bestsellers2.b8232c2b.jfif",
+    "static/media/bestsellers3.14297804.jfif": "/e-commerce/static/media/bestsellers3.14297804.jfif",
+    "static/media/bestsellers4.dc3a34e5.jpg": "/e-commerce/static/media/bestsellers4.dc3a34e5.jpg",
+    "static/media/cardLines1.4e4723b0.svg": "/e-commerce/static/media/cardLines1.4e4723b0.svg",
+    "static/media/dotArrow.48aa7dd7.svg": "/e-commerce/static/media/dotArrow.48aa7dd7.svg",
+    "static/media/App.css": "/e-commerce/static/media/factum.35182313.otf",
+    "static/media/furniture.8c950fdd.jpg": "/e-commerce/static/media/furniture.8c950fdd.jpg",
+    "static/media/kitchen.b4357176.jfif": "/e-commerce/static/media/kitchen.b4357176.jfif",
+    "static/media/livingRoom.168bf1b0.jfif": "/e-commerce/static/media/livingRoom.168bf1b0.jfif",
+    "static/media/longArrow.9ab3d710.svg": "/e-commerce/static/media/longArrow.9ab3d710.svg",
+    "static/media/longCardLines.98785e12.svg": "/e-commerce/static/media/longCardLines.98785e12.svg",
+    "static/media/mastercard.9b65e729.svg": "/e-commerce/static/media/mastercard.9b65e729.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9ddde906.js",
+    "static/js/2.a6a58625.chunk.js",
+    "static/css/main.7be9a028.chunk.css",
+    "static/js/main.e658d0af.chunk.js"
+  ]
+}

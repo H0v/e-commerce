@@ -42,7 +42,7 @@ function App() {
             <Checkout />
           </Route>
           <Route path="/*">
-            <Redirect path="/" />
+            <Redirect to="/" />
           </Route>
         </Switch>
       </Router>

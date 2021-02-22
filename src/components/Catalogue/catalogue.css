@@ -102,3 +102,10 @@
     opacity: 0.5;
   }
 }
+
+@media screen and (max-width: 1180px) {
+  .categories {
+    flex-direction: column;
+    width: auto;
+  }
+}

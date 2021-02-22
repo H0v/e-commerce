@@ -8,6 +8,7 @@ header {
   left: 0;
   bottom: 0;
   right: 0;
+  max-width: 1440px;
 }
 .logo {
   cursor: pointer;
@@ -38,3 +39,15 @@ header {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
 }
+
+@media screen and (max-width: 1047px) {
+  .headerBox {
+    margin-top: 0;
+  }
+}
+
+/* @media screen and (max-width: 668px) {
+  .headerBox {
+    margin-top: 0;
+  }
+} */

@@ -5,6 +5,8 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
+  width: 100%;
+  max-width: 1440px;
 }
 .bestsellersTitle {
   margin-top: 30px;
@@ -13,8 +15,6 @@
   margin-bottom: 30px;
 }
 
-
-
 .seeMore {
   display: flex;
   flex-direction: column;
@@ -22,9 +22,9 @@
   margin-top: 60px;
   margin-bottom: 30px;
   align-items: flex-end;
-  width: 100%;
-  max-width: 1440px;
   cursor: pointer;
+  align-self: flex-end;
+  margin-right: 20px;
 }
 .seeMore p {
   margin-bottom: 15px;
@@ -32,4 +32,22 @@
 
 .seeMore:hover {
   animation: slide2 1s ease-in-out infinite;
+}
+
+@media only screen and (max-width: 1200px) {
+  .bestsellers {
+    max-width: 768px;
+  }
+  .productsList {
+    flex-wrap: wrap;
+  }
+  .productsItem {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 676px) {
+  .productsList {
+    justify-content: center !important;
+  }
 }

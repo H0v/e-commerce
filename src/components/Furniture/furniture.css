@@ -4,4 +4,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 1180px) {
+  .productsList {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .productsItem {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .furniture {
+    max-width: 776px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .productsList {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }

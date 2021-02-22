@@ -3,6 +3,7 @@
   width: 180px;
   user-select: none;
   position: relative;
+  margin-bottom: 20px;
 }
 .closed:hover {
   background-color: rgb(232, 232, 232);

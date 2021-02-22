@@ -14,7 +14,6 @@ function Furniture({ products }) {
 }
 
 const mapStateToProps = (state) => {
-  console.log(state);
   return { products: state.products };
 };
 
